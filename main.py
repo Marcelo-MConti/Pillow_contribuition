@@ -1,6 +1,7 @@
 import neon
 import sepia
 import dither
+import filter
 import primary
 from PIL import Image
 
@@ -23,6 +24,8 @@ def main():
    primary.convert_primay(img).save("primary.png")
    print("Imagem com efeito Primary gerada!")
 
+   filter.filter_composition(img2).save("composition.png")
+   print("Imagem com efeito Primary-dither gerada!")
 
 if __name__ == "__main__":
     main()
