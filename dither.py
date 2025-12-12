@@ -40,9 +40,3 @@ def convert_dithering(image):
 
     return new
     
-# test main
-if __name__ == "__main__":
-    original = aux.open_image(input())
-
-    new = convert_dithering(original)
-    aux.save_image(new, 'dither.png')

@@ -38,10 +38,3 @@ def convert_primay(image):
             pixels[i, j] = (int(red), int(green), int(blue))
 
     return new
-
-# test main
-if __name__ == "__main__":
-    original = aux.open_image(input())
-
-    new = convert_primay(original)
-    aux.save_image(new, 'primary.png')
